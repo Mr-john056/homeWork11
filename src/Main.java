@@ -1,6 +1,20 @@
 public class Main {
+    public static void checkYear (){}
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        task1();
+        task2();
+        task3();
 
     }
+
+    private static void task1() {
+        System.out.println("Задача 1");
+    }
+    private static void task2() {
+        System.out.println("Задача 2");
+    }
+    private static void task3() {
+        System.out.println("Задача 3");
+    }
+
 }

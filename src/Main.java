@@ -10,20 +10,36 @@ public class Main {
     }
 
 
-        public static void choiseOs (){
-            byte clientOS = 1;
+        public static void choiseOs () {
+            byte clientOS = 0;
             short clientDeviceYear = 2015;
-            if (clientOS == 0 && clientDeviceYear < 2015){
+            if (clientOS == 0 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-                } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+            } else if (clientOS == 0 && clientDeviceYear >= 2015) {
                 System.out.println("Установите стандартную версию приложения для iOS по ссылке");
             }
-            if (clientOS == 1 && clientDeviceYear < 2015){
+            if (clientOS == 1 && clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else if (clientOS == 1 && clientDeviceYear >= 2015){
+            } else if (clientOS == 1 && clientDeviceYear >= 2015) {
                 System.out.println("Установите стандартную версию приложения для Android по ссылке");
             }
         }
+            public static int deliveryCards () {
+                int deliveryDistance = 95;
+                int days = 1;
+
+                if (deliveryDistance <= 20){
+                    System.out.println("Потребуется дней: " + days);
+                } else if (deliveryDistance <= 60){
+                    System.out.println("потребуется дней: " + (days+1 ));
+                    } else if (deliveryDistance <= 100) {
+                    System.out.println("Потребуется дней: " + (days+2));
+                } else {
+                    System.out.println("Нет доставки");
+                }
+                return days;
+            }
+
     public static void main(String[] args) {
         task1();
         task2();
@@ -41,6 +57,6 @@ public class Main {
     }
     private static void task3() {
         System.out.println("Задача 3");
+        deliveryCards();
     }
-
 }

@@ -49,14 +49,17 @@ public class Main {
     private static void task1() {
         System.out.println("Задача 1");
         checkYear();
+        System.out.println();
     }
     private static void task2() {
         System.out.println("Задача 2");
         int currentYear = LocalDate.now().getYear();
         choiseOs();
+        System.out.println();
     }
     private static void task3() {
         System.out.println("Задача 3");
         deliveryCards();
+        System.out.println();
     }
 }

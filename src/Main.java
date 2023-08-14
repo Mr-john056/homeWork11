@@ -29,13 +29,11 @@ public class Main {
                 int days = 1;
 
                 if (deliveryDistance <= 20){
-                    System.out.println("Потребуется дней: " + days);
+                    days = 1;
                 } else if (deliveryDistance <= 60){
-                    System.out.println("потребуется дней: " + (days+1 ));
+                    days++;
                     } else if (deliveryDistance <= 100) {
-                    System.out.println("Потребуется дней: " + (days+2));
-                } else {
-                    System.out.println("Нет доставки");
+                    days = days+2;
                 }
                 return days;
             }
@@ -59,7 +57,6 @@ public class Main {
     }
     private static void task3() {
         System.out.println("Задача 3");
-        deliveryCards();
-        System.out.println();
+        System.out.println("На доставку потребуется: " + deliveryCards() + " дня(-ей)");
     }
 }
